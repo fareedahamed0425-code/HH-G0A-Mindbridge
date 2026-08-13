@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HACKER HOUSE GOA 2026</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Montserrat:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#494900",
+                        "tertiary-container": "#b1b100",
+                        "on-primary-fixed": "#3f001a",
+                        "on-surface": "#28161b",
+                        "on-secondary-fixed": "#022100",
+                        "surface-dim": "#f2d2d8",
+                        "inverse-surface": "#3f2b30",
+                        "surface-container": "#ffe8ec",
+                        "on-tertiary-fixed": "#1d1d00",
+                        "on-secondary-container": "#107100",
+                        "inverse-on-surface": "#ffecef",
+                        "on-primary-fixed-variant": "#8f0044",
+                        "primary": "#b60059",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#cdcd00",
+                        "surface-bright": "#fff8f8",
+                        "primary-fixed": "#ffd9e1",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#79ff5b",
+                        "surface-container-low": "#fff0f2",
+                        "secondary": "#106e00",
+                        "primary-container": "#e30071",
+                        "inverse-primary": "#ffb1c4",
+                        "on-surface-variant": "#5c3f46",
+                        "secondary-container": "#38fe13",
+                        "surface-container-highest": "#fbdae1",
+                        "on-background": "#28161b",
+                        "secondary-fixed-dim": "#2ae500",
+                        "tertiary": "#626200",
+                        "outline": "#906e76",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#095300",
+                        "tertiary-fixed": "#eaea00",
+                        "background": "#fff8f8",
+                        "surface-tint": "#ba005b",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#ffb1c4",
+                        "on-error": "#ffffff",
+                        "surface-container-high": "#ffe1e6",
+                        "surface-variant": "#fbdae1",
+                        "on-primary-container": "#fffbff",
+                        "on-error-container": "#93000a",
+                        "on-primary": "#ffffff",
+                        "surface": "#fff8f8",
+                        "outline-variant": "#e5bcc5",
+                        "on-tertiary-container": "#424200"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "stack-xl": "80px",
+                        "gutter": "24px",
+                        "stack-xs": "4px",
+                        "base": "8px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "stack-sm": "12px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Montserrat"],
+                        "mono-label": ["JetBrains Mono"],
+                        "body-lg": ["Montserrat"],
+                        "mono-code": ["JetBrains Mono"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "display-xl": ["Montserrat"],
+                        "headline-md": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "mono-label": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }],
+                        "mono-code": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-xl": ["84px", { "lineHeight": "80px", "letterSpacing": "-0.04em", "fontWeight": "900" }],
+                        "headline-md": ["32px", { "lineHeight": "36px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .neo-brutal-btn {
+            border: 4px solid #000;
+            box-shadow: 4px 4px 0px 0px #000;
+            transition: all 0.1s ease;
+        }
+        .neo-brutal-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px 0px #000;
+        }
+        .neo-brutal-card {
+            border: 4px solid #000;
+            box-shadow: 4px 4px 0px 0px #000;
+        }
+    </style>
+</head>
+<body class="bg-[#fdf5e6] text-[#28161b] font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-background border-b-4 border-on-background shadow-[4px_4px_0px_0px_#000000] z-50">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-base w-full">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined font-variation-settings: 'FILL' 1; text-[32px]">terminal</span>
+<span class="font-headline-md text-headline-md uppercase tracking-tighter">HACKER HOUSE GOA 2026</span>
+</div>
+<div class="flex items-center gap-6 hidden md:flex">
+<a class="font-mono-label text-mono-label text-secondary font-bold hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all" href="#">HOME</a>
+<a class="font-mono-label text-mono-label text-on-surface-variant hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all" href="#">REGISTER</a>
+<a class="font-mono-label text-mono-label text-on-surface-variant hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all" href="#">ID CARD</a>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-stack-xl flex flex-col items-center">
+<!-- Hero Section -->
+<section class="w-full grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center relative z-10">
+<!-- Text Content -->
+<div class="flex flex-col gap-stack-md z-20">
+<div class="relative inline-block">
+<h1 class="font-display-xl text-display-xl text-black uppercase tracking-tighter mix-blend-multiply relative z-10">
+                        HACKER HOUSE<br/>GOA 2026
+                    </h1>
+<div class="absolute -top-4 -right-4 md:-top-8 md:-right-8 bg-primary-container text-on-primary-container px-4 py-2 border-4 border-black shadow-[4px_4px_0px_0px_#000000] transform rotate-12 z-20">
+<span class="font-display-xl text-[48px] font-bold">गोआ</span>
+</div>
+</div>
+<p class="font-body-lg text-body-lg max-w-md bg-white border-4 border-black p-4 shadow-[4px_4px_0px_0px_#000000]">
+                    A synthesis of raw Neo-Brutalism and lush coastal energy. Late-night coding sessions in a beach hut.
+                </p>
+<div class="pt-stack-sm">
+<button class="neo-brutal-btn bg-tertiary-fixed text-black px-8 py-4 font-headline-md text-headline-md uppercase inline-flex items-center gap-4">
+                        GET YOUR ID CARD
+                        <span class="material-symbols-outlined font-variation-settings: 'FILL' 1;">id_card</span>
+</button>
+</div>
+</div>
+<!-- Image Content -->
+<div class="relative w-full h-[600px] neo-brutal-card overflow-hidden bg-surface-container-highest">
+<img alt="" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyxZrlou9MOrHziXHpK7afKbqq8rxgSEk885nXz9Qgl1RLxj_8SfKjHYie5r91-VC984JJnh_re91KjaDDxE7CiiNA52AwpFNOAXZyWCxVlEb1ZZPh9syJfMjkkN2a1MErphHGknR2mS1abyWodtTWENZK97JR6905VKalGz8mlQy6vEk5Obl-MJRzj8yqXyvuSMryxssoFNKH1N05rCC9NwH5TIVieSly_BWEzISXgFeas6kHDS2j1VJL1XAhlLSsqbGnYkS8Iheb"/>
+<div class="absolute bottom-4 right-4 w-32 h-32 bg-white border-4 border-black shadow-[4px_4px_0px_0px_#000000] p-2 flex items-center justify-center transform -rotate-6">
+<img alt="" class="w-full h-full object-contain mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPG369n2BB7SJG69x0HWxzOXGHvx0-qAwu8JJ1irv_6-xG8fQIYKu3QlWHn6FyEc4SWE_c1x1yYqFAkegcANwrk6f_ubP58EDb038ar1ITIjDcP3ToxoA1aO_xa8cHhuahdxH2WjfptHjAn--sq55qz6BLq3yztSGfuRJWbevxk3Yhy9z06HdD2ofd-9P1VD6cFVULN3ws2qQU73QCTxj3AXCu8p_yhUH9SXsRuQ6LE79aUCxLQrvlaMI7DXKkkRyTY2MNFrNJKDDh"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-on-background border-t-4 border-secondary-fixed mt-stack-xl">
+<div class="flex flex-col md:flex-row justify-between items-center p-stack-md gap-gutter w-full max-w-7xl mx-auto">
+<span class="font-mono-code text-mono-code text-secondary-fixed">© 2026 HACKER HOUSE GOA - BUILT FOR THE COAST</span>
+<div class="flex gap-stack-md">
+<a class="font-mono-code text-mono-code text-surface-variant hover:text-primary transition-colors" href="#">CODE OF CONDUCT</a>
+<a class="font-mono-code text-mono-code text-surface-variant hover:text-primary transition-colors" href="#">BEACH MAP</a>
+<a class="font-mono-code text-mono-code text-surface-variant hover:text-primary transition-colors" href="#">API DOCS</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 border-t-4 border-on-background md:hidden bg-background">
+<div class="flex justify-around items-stretch w-full">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container border-2 border-on-background p-base flex-1" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="font-mono-label text-[10px]">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-background p-base flex-1 hover:bg-primary-container hover:text-on-primary-container" href="#">
+<span class="material-symbols-outlined text-[24px]">person_add</span>
+<span class="font-mono-label text-[10px]">REGISTER</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-background p-base flex-1 hover:bg-primary-container hover:text-on-primary-container" href="#">
+<span class="material-symbols-outlined text-[24px]">id_card</span>
+<span class="font-mono-label text-[10px]">ID CARD</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-background p-base flex-1 hover:bg-primary-container hover:text-on-primary-container" href="#">
+<span class="material-symbols-outlined text-[24px]">share</span>
+<span class="font-mono-label text-[10px]">SHARE</span>
+</a>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,82 @@
+.form-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--hot-pink); /* contrasting pink */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+}
+
+.back-btn {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background-color: var(--white);
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.back-btn:hover {
+  background-color: var(--bright-yellow);
+}
+
+.form-wrapper {
+  background-color: var(--bg-green);
+  color: var(--beige);
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 10px 10px 0px var(--black);
+  border: 4px solid var(--black);
+}
+
+.form-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--bright-yellow);
+  text-shadow: 2px 2px 0px var(--black);
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--neon-green);
+}
+
+.input-group input,
+.input-group select {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 1rem;
+  border: var(--brutal-border);
+  box-shadow: 3px 3px 0px var(--black);
+  background-color: var(--white);
+  outline: none;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  background-color: var(--beige);
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: var(--bright-yellow);
+  font-size: 2rem;
+  padding: 1rem;
+  color: var(--black);
+}
+
+.submit-btn:hover {
+  background-color: var(--white);
+}

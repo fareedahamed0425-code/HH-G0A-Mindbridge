@@ -1,0 +1,142 @@
+.landing-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-green);
+}
+
+.archway-scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: pan-in 2.5s ease-in forwards;
+}
+
+.arch {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border: 15px solid var(--beige);
+  border-bottom: none;
+  border-radius: 150px 150px 0 0;
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.arch-inner {
+  width: 200px;
+  height: 300px;
+  background-color: var(--bg-green);
+  border-radius: 100px 100px 0 0;
+}
+
+.welcome-text {
+  margin-top: 2rem;
+  font-size: 3rem;
+  color: var(--beige);
+}
+
+.beach-scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-green);
+  z-index: 10;
+}
+
+.fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.sun {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  background-color: var(--bright-yellow);
+  border-radius: 50%;
+  border: var(--brutal-border);
+}
+
+.sea {
+  position: absolute;
+  bottom: 15%;
+  width: 100%;
+  height: 15%;
+  background-color: #004d26; /* Darker green for sea */
+  border-top: var(--brutal-border);
+}
+
+.sand {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  background-color: var(--beige);
+  border-top: var(--brutal-border);
+}
+
+.content {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 8rem;
+  color: var(--bright-yellow);
+  text-shadow: 4px 4px 0px var(--black);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title .hindi {
+  color: var(--hot-pink);
+  font-family: sans-serif; /* For better hindi rendering */
+  font-size: 4rem;
+  background-color: var(--white);
+  padding: 0 10px;
+  border: var(--brutal-border);
+  box-shadow: var(--brutal-shadow);
+  transform: rotate(-5deg);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 3rem;
+}
+
+.get-id-btn {
+  font-size: 2.5rem;
+  background-color: var(--hot-pink);
+  color: var(--white);
+  padding: 1rem 2rem;
+  animation: float 3s infinite ease-in-out;
+}
+
+.get-id-btn:hover {
+  background-color: var(--bright-yellow);
+  color: var(--black);
+}
