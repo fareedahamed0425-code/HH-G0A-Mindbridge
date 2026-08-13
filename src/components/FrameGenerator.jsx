@@ -178,7 +178,7 @@ export default function FrameGenerator({ onBack }) {
               {/* FRONT SIDE */}
               <div 
                 ref={frontRef}
-                className="w-[460px] h-[680px] bg-[#F6F0DD] p-7 flex flex-col justify-between border-4 border-hhg-black rounded-3xl relative text-hhg-black shadow-2xl overflow-hidden"
+                className="w-[360px] h-[530px] sm:w-[460px] sm:h-[680px] bg-[#F6F0DD] p-5 sm:p-7 flex flex-col justify-between border-4 border-hhg-black rounded-3xl relative text-hhg-black shadow-2xl overflow-hidden"
                 style={{ backfaceVisibility: isFlipped ? 'hidden' : 'visible' }}
               >
                 <div className="w-10 h-10 rounded-full border-4 border-gray-400 bg-gray-300 shadow-inner mx-auto mb-1 flex items-center justify-center">
@@ -187,22 +187,22 @@ export default function FrameGenerator({ onBack }) {
 
                 <div className="flex justify-between items-start border-b-4 border-hhg-green pb-3">
                   <div>
-                    <h1 className="text-3xl font-display font-black text-hhg-green tracking-tight uppercase leading-none">
+                    <h1 className="text-2xl sm:text-3xl font-display font-black text-hhg-green tracking-tight uppercase leading-none">
                       HACKER HOUSE GOA
                     </h1>
-                    <p className="font-mono text-sm font-bold text-hhg-black mt-1">
+                    <p className="font-mono text-xs sm:text-sm font-bold text-hhg-black mt-1">
                       // 28-31 OCT 2026
                     </p>
                   </div>
-                  <div className="bg-hhg-pink text-white font-mono font-bold text-xl px-3 py-1 border-2 border-hhg-black shadow-brutal-sm transform -rotate-3">
+                  <div className="bg-hhg-pink text-white font-mono font-bold text-lg px-2 py-0.5 sm:text-xl sm:px-3 sm:py-1 border-2 border-hhg-black shadow-brutal-sm transform -rotate-3">
                     गोवा
                   </div>
                 </div>
 
                 <div className="flex gap-5 my-2 flex-grow items-center z-10">
-                  <div className="flex flex-col gap-4">
+                  <div className="flex flex-col gap-3 sm:gap-4">
                     {/* Metallic Photo Frame */}
-                    <div className="w-[140px] h-[140px] bg-gray-200 border-4 border-gray-400 shadow-brutal-sm p-1 rounded flex items-center justify-center overflow-hidden">
+                    <div className="w-[100px] h-[100px] sm:w-[140px] sm:h-[140px] bg-gray-200 border-4 border-gray-400 shadow-brutal-sm p-1 rounded flex items-center justify-center overflow-hidden">
                       {photo ? (
                         <img src={photo} alt="Attendee" className="w-full h-full object-cover filter contrast-105 saturate-105" />
                       ) : (
@@ -214,10 +214,10 @@ export default function FrameGenerator({ onBack }) {
                     </div>
 
                     {/* QR Code Frame */}
-                    <div className="w-[140px] h-[140px] bg-white border-4 border-gray-400 shadow-brutal-sm p-2 rounded flex items-center justify-center">
+                    <div className="w-[100px] h-[100px] sm:w-[140px] sm:h-[140px] bg-white border-4 border-gray-400 shadow-brutal-sm p-1 sm:p-2 rounded flex items-center justify-center">
                       <QRCodeSVG 
                         value={qrPayload} 
-                        size={120}
+                        style={{ width: '100%', height: '100%' }}
                         bgColor="#ffffff"
                         fgColor="#111111"
                         level="M"
@@ -225,25 +225,25 @@ export default function FrameGenerator({ onBack }) {
                     </div>
                   </div>
 
-                  <div className="flex-1 space-y-3 font-mono text-sm border-l-4 border-hhg-green/30 pl-4 py-1">
+                  <div className="flex-1 space-y-2 sm:space-y-3 font-mono text-xs sm:text-sm border-l-2 sm:border-l-4 border-hhg-green/30 pl-3 sm:pl-4 py-1">
                     <div>
-                      <span className="text-gray-600 font-bold block text-[11px] uppercase">Name:</span>
-                      <span className="font-bold text-hhg-black text-lg block leading-tight">{formData.name}</span>
+                      <span className="text-gray-600 font-bold block text-[9px] sm:text-[11px] uppercase">Name:</span>
+                      <span className="font-bold text-hhg-black text-base sm:text-lg block leading-tight">{formData.name}</span>
                     </div>
                     <div className="border-t-2 border-gray-300 pt-1.5">
-                      <span className="text-gray-600 font-bold block text-[11px] uppercase">Role:</span>
-                      <span className="font-bold text-hhg-pink text-base block">{formData.role}</span>
+                      <span className="text-gray-600 font-bold block text-[9px] sm:text-[11px] uppercase">Role:</span>
+                      <span className="font-bold text-hhg-pink text-sm sm:text-base block">{formData.role}</span>
                     </div>
                     <div className="border-t-2 border-gray-300 pt-1.5">
-                      <span className="text-gray-600 font-bold block text-[11px] uppercase">Organisation:</span>
+                      <span className="text-gray-600 font-bold block text-[9px] sm:text-[11px] uppercase">Organisation:</span>
                       <span className="font-bold text-hhg-black block">{formData.organization}</span>
                     </div>
                     <div className="border-t-2 border-gray-300 pt-1.5">
-                      <span className="text-gray-600 font-bold block text-[11px] uppercase">Team Name:</span>
+                      <span className="text-gray-600 font-bold block text-[9px] sm:text-[11px] uppercase">Team Name:</span>
                       <span className="font-bold text-hhg-black block">{formData.teamName}</span>
                     </div>
                     <div className="border-t-2 border-gray-300 pt-1.5 relative">
-                      <span className="text-gray-600 font-bold block text-[11px] uppercase">Unique ID:</span>
+                      <span className="text-gray-600 font-bold block text-[9px] sm:text-[11px] uppercase">Unique ID:</span>
                       <span className="font-bold text-hhg-black block">{formData.uniqueId}</span>
 
                       <div className="absolute -right-2 -bottom-2 border-4 border-emerald-700 text-emerald-800 font-mono font-black text-xs px-2 py-0.5 transform -rotate-12 rounded opacity-90 tracking-wider bg-emerald-100/80 shadow-brutal-sm">
@@ -254,12 +254,12 @@ export default function FrameGenerator({ onBack }) {
                 </div>
 
                 <div className="w-full pt-1 border-t-4 border-hhg-green overflow-hidden rounded-b-xl relative z-10">
-                  <div className="w-full h-20 relative overflow-hidden border-b-2 border-hhg-black rounded-b-xl">
-                    <img src="/goa_beach_shack.jpg" alt="Goa Beach Shack" className="absolute bottom-0 w-full h-[200px] object-cover object-bottom" />
+                  <div className="w-full h-14 sm:h-20 relative overflow-hidden border-b-2 border-hhg-black rounded-b-xl">
+                    <img src="/goa_beach_shack.jpg" alt="Goa Beach Shack" className="absolute bottom-0 w-full h-[140px] sm:h-[200px] object-cover object-bottom" />
                   </div>
                 </div>
 
-                <div className="text-center font-mono font-black text-base text-hhg-black tracking-widest uppercase mt-1 z-10">
+                <div className="text-center font-mono font-black text-sm sm:text-base text-hhg-black tracking-widest uppercase mt-1 z-10">
                   HHGOA.COM
                 </div>
               </div>
@@ -267,7 +267,7 @@ export default function FrameGenerator({ onBack }) {
               {/* BACK SIDE */}
               <div 
                 ref={backRef}
-                className="w-[460px] h-[680px] bg-[#F6F0DD] p-7 flex flex-col justify-between border-4 border-hhg-black rounded-3xl text-hhg-black absolute inset-0 shadow-2xl overflow-hidden"
+                className="w-[360px] h-[530px] sm:w-[460px] sm:h-[680px] bg-[#F6F0DD] p-5 sm:p-7 flex flex-col justify-between border-4 border-hhg-black rounded-3xl text-hhg-black absolute inset-0 shadow-2xl overflow-hidden"
                 style={{ 
                   backfaceVisibility: isFlipped ? 'visible' : 'hidden', 
                   transform: 'rotateY(180deg)' 
@@ -281,22 +281,22 @@ export default function FrameGenerator({ onBack }) {
                   <img src="/hackers_desk.jpg" alt="Watermark" className="absolute inset-0 w-full h-full object-cover opacity-15 pointer-events-none" />
 
                   <div className="relative z-10">
-                    <h2 className="text-3xl font-display font-black text-hhg-green border-b-4 border-hhg-green pb-2 mb-6 uppercase">
+                    <h2 className="text-2xl sm:text-3xl font-display font-black text-hhg-green border-b-4 border-hhg-green pb-2 mb-4 sm:mb-6 uppercase">
                       BUILDER ACCESS CREED
                     </h2>
                     
-                    <div className="space-y-4 font-mono text-xs font-bold text-hhg-black">
+                    <div className="space-y-3 sm:space-y-4 font-mono text-[10px] sm:text-xs font-bold text-hhg-black">
                       <div>
-                        <p className="text-hhg-pink uppercase text-[10px]">EVENT DATES:</p>
-                        <p className="text-base font-black">28 - 31 OCTOBER 2026</p>
+                        <p className="text-hhg-pink uppercase text-[9px] sm:text-[10px]">EVENT DATES:</p>
+                        <p className="text-sm sm:text-base font-black">28 - 31 OCTOBER 2026</p>
                       </div>
                       <div>
-                        <p className="text-hhg-pink uppercase text-[10px]">VENUE LOCATION:</p>
-                        <p className="text-base font-black">VAGATOR BEACH FRONT, GOA</p>
+                        <p className="text-hhg-pink uppercase text-[9px] sm:text-[10px]">VENUE LOCATION:</p>
+                        <p className="text-sm sm:text-base font-black">VAGATOR BEACH FRONT, GOA</p>
                       </div>
                       <div>
-                        <p className="text-hhg-pink uppercase text-[10px]">BUILDER RULES:</p>
-                        <ul className="list-disc list-inside space-y-1 mt-1">
+                        <p className="text-hhg-pink uppercase text-[9px] sm:text-[10px]">BUILDER RULES:</p>
+                        <ul className="list-disc list-inside space-y-0.5 sm:space-y-1 mt-1">
                           <li>1. SHIP CODE, NO SLIDES.</li>
                           <li>2. WEAR FLIP-FLOPS TO ALL SESSIONS.</li>
                           <li>3. RESPECT GOA PALMS & BEACH NATURE.</li>
@@ -305,8 +305,8 @@ export default function FrameGenerator({ onBack }) {
                     </div>
                   </div>
 
-                  <div className="text-center font-mono font-bold text-xs pt-4 border-t-2 border-hhg-green relative z-10">
-                    <p className="font-mono text-2xl font-black tracking-tighter opacity-80 mb-2">
+                  <div className="text-center font-mono font-bold text-[10px] sm:text-xs pt-4 border-t-2 border-hhg-green relative z-10">
+                    <p className="font-mono text-xl sm:text-2xl font-black tracking-tighter opacity-80 mb-2">
                       |||| || ||| || ||| || ||
                     </p>
                     <p className="text-hhg-green font-black">OFFICIAL PARTICIPANT PASS // HHGOA.COM</p>
