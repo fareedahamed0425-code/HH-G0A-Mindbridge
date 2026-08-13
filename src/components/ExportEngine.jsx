@@ -43,7 +43,7 @@ export default function ExportEngine({ userData, onBack }) {
           disabled={sharing}
           className="bg-hhg-green text-hhg-yellow px-8 py-4 font-mono font-bold text-2xl border-4 border-hhg-black shadow-brutal hover:bg-hhg-black hover:text-hhg-pink active:translate-y-1 active:shadow-none transition-all"
         >
-          {sharing ? '[ PROCESSING... ]' : '[ POST TO LINKEDIN // SHARE ]'}
+          {sharing ? '[ PROCESSING... ]' : '[ POST TO X // SHARE ]'}
         </button>
       </div>
 

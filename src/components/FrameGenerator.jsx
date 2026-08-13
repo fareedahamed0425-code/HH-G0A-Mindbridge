@@ -66,7 +66,7 @@ export default function FrameGenerator({ onBack }) {
         `Excited to announce I'm attending Hacker House Goa 2026! 🌴⚡\n\nName: ${formData.name}\nRole: ${formData.role}\nUnique ID: ${formData.uniqueId}\n\nCheck out my official badge! #FrameInGoa #HackerHouseGoa`
       );
       
-      window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}&text=${shareText}`, '_blank');
+      window.open(`https://x.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank');
     } catch (err) {
       console.error("Share failed:", err);
     }
@@ -291,7 +291,7 @@ export default function FrameGenerator({ onBack }) {
             onClick={handleShare}
             className="brutal-btn bg-hhg-yellow text-hhg-black text-lg py-4 mt-1"
           >
-            [ 🚀 SHARE TO LINKEDIN ]
+            [ SHARE TO X ]
           </button>
         </motion.div>
 

@@ -45,7 +45,7 @@ const IdCard = ({ userData, onBack }) => {
             console.log("Web Share failed, fallback to download.");
           }
         } else {
-            alert('Image downloaded! You can now post it on LinkedIn.');
+            alert('Image downloaded! You can now post it on X.');
         }
       }
     } catch (err) {
@@ -127,7 +127,7 @@ const IdCard = ({ userData, onBack }) => {
       <p className="flip-hint">&uarr; CLICK TO FLIP &uarr;</p>
 
       <button className="share-btn brutal-box" onClick={handleShare} disabled={sharing}>
-        <Share2 size={24} /> {sharing ? 'GENERATING...' : 'LINKEDIN SHARE [POST PREVIEW]'}
+        <Share2 size={24} /> {sharing ? 'GENERATING...' : 'X SHARE [POST PREVIEW]'}
       </button>
 
       {/* Hidden Shareable Container for html2canvas */}
