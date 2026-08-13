@@ -50,7 +50,7 @@ export default function FrameGenerator({ onBack }) {
       // 1. Auto Download image
       const link = document.createElement('a');
       link.href = dataUrl;
-      link.download = `HHGoa_ID_Card_${isFlipped ? 'Back' : 'Front'}.png`;
+      link.download = `HHGOA26-${formData.name}.png`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

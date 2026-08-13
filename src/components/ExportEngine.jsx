@@ -18,7 +18,7 @@ export default function ExportEngine({ userData, onBack }) {
 
         const link = document.createElement('a');
         link.href = image;
-        link.download = 'HHGoa_ID_Card.png';
+        link.download = `HHGOA26-${userData.name}.png`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
